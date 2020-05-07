@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="assets\css/bootstrap.css">
+        <link rel="stylesheet" href="assets\css/bootstrap-grid.css">
+        <link rel="stylesheet" href="assets\animate.css">
+        <link rel="stylesheet" href="assets/css/wowanimate.css">
+        <title>Alperen</title>
+		
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				$("#top").click(function () {
+					// Sayfamızı kaydıracak olan kod burasıdır.
+					$("html,body").stop().animate({ scrollTop: "0" }, 1000);
+				});
+			});
+			$(window).scroll(function () {
+				var uzunluk = $(document).scrollTop();
+				if (uzunluk > 300) $("#top").fadeIn(500);
+				else { $("#top").fadeOut(500); }
+			});
+		</script>
+		<style type="text/css">
+			#top {
+				bottom: 5px;
+				bottom: 20px;
+				display: none;
+				height: 100px;
+				position: fixed;
+				right: 20px;
+			}
+		</style>
+		
+    </head>
+    
+    <body>
+         
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #191970; max-height: 90px" >
+             <nav class="navbar navbar-expand-lg navbar-dark " >
+                <a class="navbar-brand" style="font-style: italic; font-size: 20px" href="index.html"><strong>Hakkında</strong></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="sehrimiz.html"><strong><span style="color: white; font-size: 20px">Şehrim</span></strong></a>
+						<a class="nav-item nav-link active" href="mirasımız.html"><strong><span style="color: white; font-size: 20px">Mirasımız</span></strong></a>                       
+                        <a class="nav-item nav-link active" href="iletisim.html"><strong><span style="color: white; font-size: 20px">İletişim</span></strong></a>
+                    </div>
+                </div>
+            </nav>
+          
+       </nav>
+	   
+	   
+	   <!--slidershow-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" style="height: 720">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 animated zoomIn" src="assets/sli.jpg" alt="First slide">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Niğde İlinin Tarihi</h5>
+							<a href="mirasımız.html">Niğde hakkında daha fazla için</a>
+						</div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/sli1.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/sli2.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/sli4.jpg" alt="four slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+<!--slidershow-->
+        
+        
+      <!--resim-yazılar-->
+    <div class="container mt-5">
+        <div class="text-justify">
+            <div class="row">  
+                <div class="col" style="margin-top: 15px">
+                    <p class="wow bounceInUp">
+					
+                </div>
+            </div>
+            <div class="row wow bounceInDown">
+				<div class="col align-self-center">
+					<div >
+                        <img src="assets/sehir.jpg" alt="resim">
+                </div>
+				</div>
+                <div  class="col align-self-center" >
+                    <p>
+						<strong>Nigde Tarihi</strong>
+                    </p>
+					<p>
+					M.S. 395 yılında ise Anadolu Bizans hükümdarlığı altına girmiştir. Özellikle Kapadokya ve Ihlara Bölgesi bu dönemi yansıtır. Niğde bölgesi Bizans hükümdarlığında iken Sasani, Pers ve Arapların istilalarına uğramıştır. Tyana kenti 931 yılındaki Arap İstilası sonucu büyük ölçüde yıkılmıştır. Bu dönemin en güzel ve görkemli eserlerinden birisi Gümüşler Kasabası yakınındaki Gümüşler Örenyeri ve Manastırıdır.
+					</p>
+					<p>
+					M.Ö. 30 – M.S. 395 yıllarını kapsayan Roma devrinde Niğde bölgesi tarihinin en önemli konumlarından birini yaşamıştır. Bu dönemde Tyana (Kemerhisar Kasabası) çevresinde yoğun bir yapılaşma görülür. Saraylar, mabetler, su kemerleri ve yerleşim birimleriyle oldukça büyük bir kent konumuna getirilmiştir.
+                    </p>
+                </div>           
+            </div>
+            <div class="row wow bounceInDown">
+                
+                <div class="col align-self-center">
+					<p>
+						<strong>Tarihin İlk İzleri</strong>
+                    </p>
+                    <p>
+					Niğde İli'nin en eski adının Nahita ya da Nakita olduğu öne sürülmektedir. Bu ada ilk kez İbn Bibi'de rastlanmıştır. Eski Niğde Milletvekili Dr. Avram Galanti ise Niğde kitabında:“Niğde’nin en eski ismi Anahita’dır. Anahita, bir ilahenin ismidir ki, kameri ve bereketi temsil eder.” Demektedir.
+
+                    </p>
+                </div>           
+                <div class="col" style="margin-top: 15px">
+                    <img src="assets/sehir2.jpg" alt="resim">
+                </div>
+            </div>
+            <div class="row wow bounceInDown">
+                <div >
+                    <p>
+					    Niğde’nin tarihi ile ilk buluntular, Neolitik döneme (M.Ö. 7250-5500) rastlar. Bunlar Bor Bahçeli Kasabası Roma Havuzu yakınındaki Köşk Höyük’ten ve Bor Pınarbaşı Höyüğünden çıkartılan eserlerdir. Anadolu’da Hitit dönemi olarak isimlendirilen M.Ö. 2000-7000  yıllarına ait eserler ise Kömürcü Köyü Göllüdağ Örenyeri’nden çıkartılmıştır. Helenistik dönemde ise (M.Ö.330-30) Niğde bölgesi Büyük İskender’in komutanlarından Eumenes’in kurduğu Bergama Krallığı’na dâhil olmuştur. Tepe Bağları ve Ulukışla Porsuk Höyük kazılarından bu döneme ait eserler çıkartılmıştır.
+                    </p>
+                </div>
+    
+            </div>
+			
+			<div id="top">
+				Yukarı<br />
+				<img width="50" height="50" src="assets/yukari.png" />
+			</div>
+            
+        </div>
+        
+    </div>
+        
+        
+        <footer style="background-color: black; margin-top: 50px">
+            <div style="color: white; text-align: center">
+                <p>Posted by: Alperen</p>
+                <p>Contact information: <a href="mailto:someone@example.com">Alperen@example.com</a></p>
+            </div>
+        </footer>
+        
+			 
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+		
+	
+    </body>
+</html>
