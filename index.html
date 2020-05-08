@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="assets\css/bootstrap.css">
+        
+        <link rel="stylesheet" href="assets\css/bootstrap-grid.css">
+        <link rel="stylesheet" href="assets/css/inter-ui.css">
+        <link rel="stylesheet" href="assets/css/wowanimate.css">
+		<link rel="stylesheet" href="assets/animatescroll/animatescroll.js">
+		<link rel="stylesheet" href="assets/animatescroll/animatescroll.min.js">
+		<link rel="stylesheet" href="assets/animatescroll/jquery-1.8.3.min.js">
+        
+        <title>Alperen</title>
+        
+		
+		<style>
+			table {
+			  font-family: arial, sans-serif;
+			  border-collapse: collapse;
+			  width: 100%;
+			}
+
+			td, th {
+			  border: 1px solid #dddddd;
+			  text-align: left;
+			  padding: 8px;
+			}
+
+			tr:nth-child(even) {
+			  background-color: #dddddd;
+			}
+		</style>
+		
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				$("#top").click(function () {
+					// Sayfamızı kaydıracak olan kod burasıdır.
+					$("html,body").stop().animate({ scrollTop: "0" }, 1000);
+				});
+			});
+			$(window).scroll(function () {
+				var uzunluk = $(document).scrollTop();
+				if (uzunluk > 300) $("#top").fadeIn(500);
+				else { $("#top").fadeOut(500); }
+			});
+		</script>
+		<style type="text/css">
+			#top {
+				bottom: 5px;
+				bottom: 20px;
+				display: none;
+				height: 100px;
+				position: fixed;
+				right: 20px;
+			}
+		</style>
+             
+        
+    </head>
+    
+    <body>
+ 
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #191970; max-height: 90px" >
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+                <a class="navbar-brand" style="font-style: italic; color: #7a6986; font-size: 20px" href="index.html"><strong>Hakkında</strong></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="sehrimiz.html"><strong><span style="color: white; font-size: 20px">Şehrim</span></strong></a>
+						<a class="nav-item nav-link active" href="mirasımız.html"><strong><span style="color: white; font-size: 20px">Mirasımız</span></strong></a>                        
+                        <a class="nav-item nav-link active" href="iletisim.html"><strong><span style="color: white; font-size: 20px">İletişim</span></strong></a>
+						<a class="nav-item nav-link active" href="giris.html"><strong><span style="color: white; font-size: 20px; margin-left:900px">Login</span></strong></a>
+                    </div>
+                </div>
+            </nav>
+
+		
+
+            
+		</nav>
+      
+        <div class="container mt-5">
+			<div class="text-justify">
+				<div class="row wow rotateInDownLeft">
+					<div class="col">
+						<img src="assets/foto1.jpg" alt="resim" width="700px" height="500px" class="col align-self-center">
+					</div>
+					<div class="col align-self-center">
+						
+						<table>
+							<tr>
+								<th>ÖZGEÇMİŞ</th>
+							</tr>
+							<tr>
+								<td>Adı soyadı : Alperen Şenol</td>
+							</tr>
+							<tr>
+								<td>Okul No : G191210063</td>
+							</tr>
+							<tr>
+								<th>Eğitim Bilgileri</th>
+							</tr>
+							<tr>
+								<td>Lise Özel Bilge Anadolu Lisesi</td>
+							</tr>
+							<tr>
+								<td>Üniversite Sakarya Üniversitesi Bilgisayar Mühendisliği</td>
+							</tr>
+							<tr>
+								<td>Doğum tarihi: 5.01.2000</td>
+							</tr>
+						</table>
+						
+						<p>
+						İsmim Alperen. 5 Ocak 2000 Meram doğumluyum. Annem ve babam öğretmen, 3 kardeşiz. Arkadaşlarımla vakit geçirmeyi, bilgisayar oyunları oynamayı özellikle futbol, basketbol oynamayı severim. Kendi başıma ise film, dizi izlemeyi; kitap okumayı severim. Bağlama ve flüt çalmayı seviyorum. Lisede MUN etkinliklerine katılmıştım üniversitede de katılmayı istiyorum.
+						</p>
+					</div>
+				</div>
+				<div class="row wow rotateInDownRight">
+					<div class="col" style="margin-top: 25px">
+						<p>
+						   <strong>HAKKIMDA</strong>
+						</p>
+						<p>
+						   Hobilerimin en başında seyahat yapmak geliyor . Yeni yerler görmek kendimi iyi hissettiren şeyler arasında. Müzik dinlemek.. Müzik dinlemeye bayılırım.  Canım sıkkınken , üzgünken yada farketmez sevinçliyken  müzik dinlerim. Arkadaşlarımla vakit geçirmekte benim oldukça mutlu eden şeyler arasında .
+						</p>
+					</div>
+				</div>
+				<div class="row justify-content-md-center  animated rotateInDownRight">
+					<div class="col-md-auto" >
+						<img src="assets/foto2.jpg" alt="resim" width= "700px" height= "400px" >
+					</div>
+				</div>
+				
+			</div>
+			<div id="top">
+					Yukarı<br/>
+					<img width="50" height="50" src="assets/yukari.png" />
+			</div>
+        
+		</div>
+
+
+		<div class="container mt-5">
+        
+            <div id="top">
+				Yukarı<br />
+				<img width="50" height="50" src="assets/yukari.png" />
+			</div>
+            
+        </div>
+
+
+		
+   
+        <footer style="background-color: black; margin-top: 50px">
+            <div style="color: white; text-align: center">
+                <p>Posted by: Alperen</p>
+                <p>Contact information: <a href="mailto:someone@example.com">Alperen@example.com</a></p>
+            </div>
+        </footer>
+    
+
+       
+		 
+			  
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        
+        
+        
+    </body>
+</html>
+
